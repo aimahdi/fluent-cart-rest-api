@@ -7,7 +7,7 @@ Authorization: Basic {base64_encoded_credentials}
 //Create Application Password for Admin User
 
 Request Body: 
-
+```json
 {
     "action":"change_shipping_status",
     "statuses": {
@@ -17,9 +17,10 @@ Request Body:
     "manage_stock":true,
     "query_timestamp":1761798864536
 }
+```
 
 Response Body:
-
+```json
 {
     "message": "Status has been updated",
     "data": {
@@ -454,3 +455,4 @@ Response Body:
         ]
     }
 }
+```
